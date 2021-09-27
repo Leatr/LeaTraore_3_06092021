@@ -12,11 +12,12 @@
 	font-family: 'Raleway', sans-serif;
 	box-sizing: border-box;
 }
+
 .tallcontenair article div{
     display:flex;
     justify-content:center;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
 }
 h1{
     font-family:'Shrikhand', cursive;
@@ -26,6 +27,7 @@ h1{
 
 header div {
     display: flex;
+    margin-left: 100px;
 }
 header div i{
     margin-top: 25px;
@@ -35,6 +37,7 @@ header div i{
 }
 header img{
     height: 38px;
+    margin-left: 33%;
 margin-top: 19px;
 margin-bottom: 16px;
 
@@ -47,9 +50,7 @@ z-index: 10;
 }
 
  /*LE MENU*/
- .desktopmenulist{
-     margin: 30px 0 30px 0;
- }
+ 
  .tallcontenair{
     position: relative;
      width: 100%;
@@ -59,20 +60,31 @@ z-index: 10;
     border-radius: 50px 50px 0 0;
     margin-top:-70px ;
     }
-
+    .tallcontenair div{
+        margin: 0 0 25px 0;
+        padding-right:0px;
+        font-weight: bold;
+        font-size: 40px;
+    }   
+    .tallcontenair div i{
+        font-size: 30px;
+        margin-left:40px;
+    }
     .bigtitle{
-        display:flex;
-        justify-content: center;
         border-bottom: 3px solid #99e2d0;
-        
+        margin-left: 20px;
+        padding-top: 25px;
+     padding-bottom: 5px;
+     width: 50px;
     }
 .menulist{
     border: 1px solid transparent;
     background-color: white;
+    box-shadow:6px 6px 10px  #c8c8c8;
     border-radius: 15px 15px 15px 15px;
     height: 70px; 
     padding: 10px 40px 10px 40px;
-    margin: 15px 0px 0px 45px;
+    margin: 15px 100px 0px 20px;
 }
 mark{
     background-color: white;
@@ -89,26 +101,28 @@ mark{
      display: flex;
      justify-content: center;
  }
- .bottonrestau {
+   /*Botton commander*/
+   .bottonrestau {
     border: 1px solid transparent;
     background: rgb(174,95,219);
     background: linear-gradient(354deg, 
    rgba(174,95,219,1) 10%,
    rgba(233,114,218,1) 73%);
+    text-align: center;
     border-radius: 50px 50px 50px 50px;
     box-shadow:6px 6px 10px  #c8c8c8;
     height: 62px;
-    width: 360px;
-    padding-top:20px;
+    padding: 14px 90px 0 90px;
     display:flex ;
     justify-content: center;
-    margin: 13px 0 20px 130px;
-   
+    margin: 70px 0 30px 0;
    }
    .bottonrestau a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size:20px;
+    
    }
  /*Footer*/
  footer{
@@ -150,10 +164,11 @@ footer div ul> li{
         display:flex;
         justify-content: space-around;
         margin-right:110px;
-   
+        margin-left: 0;
     }
     h1{
         font-family:'Shrikhand', cursive;
+        font-size: 30px;
     }
     header div i{
         margin-top: 25px;
@@ -163,6 +178,7 @@ footer div ul> li{
     }
     header img{
         height: 38px;
+        margin-left:0;
     margin-top: 19px;
     margin-bottom: 16px;
 
@@ -173,8 +189,8 @@ footer div ul> li{
     object-fit: cover;
     z-index: 10;
     }
-
     /*LE MENU*/
+    
     .tallcontenair{
         position: relative;
          width: 100%;
@@ -184,20 +200,38 @@ footer div ul> li{
         border-radius: 50px 50px 0 0;
         margin-top:-70px ;
         }
+    .tallcontenair div{
+        margin: 0 0 25px 0;
+        padding-right:0px;
+        font-weight: bold;
+        font-size: 40px;
+    }   
+    .tallcontenair div i{
+        font-size: 30px;
+        margin-left:40px;
+
+        
+    }
     .menulist{
         border: 1px solid transparent;
         background-color: white;
+        box-shadow:6px 6px 10px  #c8c8c8;
         border-radius: 15px 15px 15px 15px;
         height: 70px;
-        margin: 0 0 10px 0;
+        margin: 20px 0 20px 0;
         padding: 10px 0 0 10px;
     }
     
     .bigtitle{
-        border-bottom: 1px solid #99e2d0;
+        border-bottom: 3px solid #99e2d0;
+        padding-top: 25px;
+        padding-bottom: 5px;
+        margin:0;
+        width: 50px;
     }
     .menulist h3{
         font-weight: bold;
+        
     }
     .menulist p{
         padding-top: 05px;
@@ -213,46 +247,53 @@ footer div ul> li{
         border-radius: 50px 50px 50px 50px;
         box-shadow:6px 6px 10px  #c8c8c8;
         height: 62px;
-        padding-top:20px;
+        padding: 14px 30px 0 30px;
         display:flex ;
         justify-content: center;
-        margin: 30px 130px 0 130px;
+        margin: 30px 130px 50px 130px;
        }
        .bottonrestau a{
         text-decoration: none;
         color: white;
         font-weight: bold;
+        font-size:20px;
+        
        }
       
+
     /*Footer*/
-			footer{
-				padding-top: 20px;
-				background-color:#353535;
-				margin-top: 20px;
-				padding-left: 50px;
-			}
-			footer div img{
-				color: white;
-			}
-			footer div ul{
-				padding: 0;
-				color: white;
-				list-style: none;
-			}
-			footer div ul> li{
-				padding-bottom:10px ;
-			}
-			.iconrestau{
-				display: flex;
-			}
-			.iconhands{
-				display: flex;
-			}
-			.iconhands i{
-				
-				padding-right: 13px;	
-			}
-			.iconrestau i{
-			 padding-right: 20px;
-			}	
+    footer{
+        padding-top: 20px;
+        background-color:#353535;
+        padding-left: 40px;
+    }
+    footer h2{
+        font-family: 'Shrikhand', cursive;
+        color:white;
+        padding-bottom: 28px;
+    }
+    footer div img{
+        color: white;
+    }
+    footer div ul{
+        padding: 0;
+        color: white;
+        list-style: none;
+    }
+    footer div ul> li{
+        padding-bottom:10px ;
+    }
+    .iconrestau{
+        display: flex;
+    }
+    .iconhands{
+        display: flex;
+    }
+    .iconhands i{
+        
+        padding-right: 13px;	
+    }
+    .iconrestau i{
+     padding-right: 20px;
+    }
 }
