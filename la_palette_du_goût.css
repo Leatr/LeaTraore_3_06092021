@@ -13,7 +13,7 @@
 	box-sizing: border-box;
 }
 
-.tallcontenair article div{
+.tallcontenair>div{
     display:flex;
     justify-content:center;
     font-weight: bold;
@@ -21,8 +21,8 @@
 }
 h1{
     font-family:'Shrikhand', cursive;
-    display:flex;
     justify-content: center;
+    font-size: 35px;
 }
 
 header div {
@@ -53,22 +53,19 @@ z-index: 10;
  
  .tallcontenair{
     position: relative;
-     width: 100%;
      padding:25px 10px 10px 10px;
     border: 3px solid transparent;
     background-color: #f2f2f2;
     border-radius: 50px 50px 0 0;
     margin-top:-70px ;
     }
-    .tallcontenair div{
-        margin: 0 0 25px 0;
-        padding-right:0px;
-        font-weight: bold;
-        font-size: 40px;
-    }   
+     
     .tallcontenair div i{
         font-size: 30px;
         margin-left:40px;
+    }
+    .mealmenu{
+        margin: 0 40px 0 40px;
     }
     .bigtitle{
         border-bottom: 3px solid #99e2d0;
@@ -77,25 +74,194 @@ z-index: 10;
      padding-bottom: 5px;
      width: 50px;
     }
+.content_text{
+  width: 80%;
+  padding: 10px;
+}
+.price {
+  font-size: 17px;
+  font-weight: bold; 
+  margin-top: 18px; 
+  padding-right: 10px;
+}
+.checbox {
+  display: none;
+  width: 30%; 
+  border-radius: 0 15px 15px 0;
+}
+
+.menulist:hover .checbox {
+  background-color:  #99e2d0;
+  display: block;
+  flex: 0 0 10%;
+  height: 100%;
+  background: #99e2d0;
+  overflow: hidden;
+  animation: checkbox ease 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+@keyframes checkbox {
+  0% {
+    transform: translate(50px, 0);
+  }
+  20% {
+    transform: translate(30px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+
+/*icon animation*/
+.menulist:hover .iconcircle {
+    margin: 25px 0px 0px 10px;
+    font-size: 24px;
+    color: #fff;
+    transform: rotate(360deg);
+    animation: iconcircle ease 0.5s 1;
+}
+@keyframes iconcircle {
+  0% {
+    transform: rotade(-90deg);
+  }
+  20% {
+    transform: rotade(-75deg) scale(1.03);
+  }
+  40% {
+    transform: rotade(-60deg) scale(1.08);
+  }
+  60% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+  80% {
+    transform: rotade(-30deg) scale(1.08);
+  }
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
+}
+
+.menulist .iconcircle {
+  font-size: 24px;
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.menulist:hover .price {
+  animation: list-content ease 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  
+}
+@keyframes list-content {
+  0% {
+    transform: translate(50px, 0);
+  }
+  40% {
+    transform: translate(25px, 0);
+  }
+  70% {
+    transform: translate(12px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
 .menulist{
+  display: flex;
+  justify-content: space-between;
     border: 1px solid transparent;
     background-color: white;
+    overflow: hidden;
     box-shadow:6px 6px 10px  #c8c8c8;
     border-radius: 15px 15px 15px 15px;
-    height: 70px; 
-    padding: 10px 40px 10px 40px;
-    margin: 15px 100px 0px 20px;
+    flex: 1 0 33%;
+    padding:0;
+    margin: 20px 0 0 0;
 }
+.content_text{
+  width: 85%;
+  padding: 10px;
+  padding-right: 90px;
+}
+
+.menulist > p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu1 {
+    animation: menu0 0.8s;
+  }
+  
+  .menu2{
+    animation: menu0 1.2s;
+  }
+  
+  .menu3 {
+    animation: menu0 1.6s;
+  }
+  
+  .menu4 {
+    animation: menu0 2s;
+  }
+  
+  .menu5 {
+    animation: menu0 2.4s;
+  }
+  
+  .menu6 {
+    animation: menu0 2.8s;
+  }
+  
+  .menu7 {
+    animation: menu0 3.2s;
+  }
+  
+  .menu8 {
+    animation: menu0 3.6s;
+  }
+  
+  .menu9 {
+    animation: menu0 3.8s;
+  }
+  
+  @keyframes menu0 {
+    from {
+        transform: scale(0.1);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
 mark{
     background-color: white;
     font-weight: bold;
+
 }
+
 .menulist h3{
+    font-size: 20px;
     font-weight: bold;
+    
 }
 .menulist p{
     padding-top: 05px;
+    font-size: 17px;
 }
+
  /*Botton commander*/
  .bottonrestaudiv {
      display: flex;
@@ -117,6 +283,13 @@ mark{
     justify-content: center;
     margin: 70px 0 30px 0;
    }
+   .bottonrestaudiv :hover{
+    background: rgb(255,158,242);
+    background: linear-gradient(90deg, 
+    rgba(255,158,242,1) 49%, 
+    rgba(212,137,255,1) 65%);
+    }
+
    .bottonrestau a{
     text-decoration: none;
     color: white;
@@ -126,6 +299,8 @@ mark{
    }
  /*Footer*/
  footer{
+  display:flex;
+  flex-direction: row;
     padding-top: 20px;
     background-color:#353535;
     padding-left: 50px;
@@ -139,12 +314,15 @@ footer div img{
     color: white;
 }
 footer div ul{
+  display:flex;
+  flex-direction: row;
     padding: 0;
     color: white;
     list-style: none;
 }
 footer div ul> li{
     padding-bottom:10px ;
+		margin: 17px 66px 0px 76px;
 }
 .iconrestau{
     display: flex;
@@ -200,26 +378,193 @@ footer div ul> li{
         border-radius: 50px 50px 0 0;
         margin-top:-70px ;
         }
-    .tallcontenair div{
-        margin: 0 0 25px 0;
-        padding-right:0px;
-        font-weight: bold;
-        font-size: 40px;
-    }   
-    .tallcontenair div i{
+    .tallcontenair >div{
+        display: flex; 
+}
+       
+    .tallcontenair> div i{
         font-size: 30px;
         margin-left:40px;
+    }
+    .dish{
+        flex-direction: column;
+        margin:0;
+       
+    }
+    .menu1 {
+        animation: menu0 0.8s;
+      }
+      
+      .menu2{
+        animation: menu0 1.2s;
+      }
+      
+      .menu3 {
+        animation: menu0 1.6s;
+      }
+      
+      .menu4 {
+        animation: menu0 2s;
+      }
+      
+      .menu5 {
+        animation: menu0 2.4s;
+      }
+      
+      .menu6 {
+        animation: menu0 2.8s;
+      }
+      
+      .menu7 {
+        animation: menu0 3.2s;
+      }
+      
+      .menu8 {
+        animation: menu0 3.6s;
+      }
+      
+      .menu9 {
+        animation: menu0 3.8s;
+      }
+      
+      @keyframes menu0 {
+        from {
+            transform: scale(0.1);
+          }
+          to {
+            transform: scale(1);
+          }
+        }
+        .mealmenu{
+            margin: 0;
+        }
+       
+    .price {
+      font-size: 17px;
+      font-weight: bold; 
+       margin-top: 18px; 
+      padding-right: 10px;
+    }
+    .checbox {
+      display: none;
+      width: 30%;  
+      border-radius: 0 15px 15px 0;
 
-        
+    }
+
+    .menulist:hover .checbox {
+      background-color:  #99e2d0;
+      display: block;
+      flex: 0 0 10%;
+      background: #99e2d0;
+      overflow: hidden;
+      animation: checkbox ease 0.3s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      transform-origin: 50% 50%;
+    }
+    @keyframes checkbox {
+      0% {
+        transform: translate(50px, 0);
+      }
+      20% {
+        transform: translate(30px, 0);
+      }
+      40% {
+        transform: translate(20px, 0);
+      }
+      60% {
+        transform: translate(15px, 0);
+      }
+      80% {
+        transform: translate(7px, 0);
+      }
+      100% {
+        transform: translate(5px, 0);
+      }
+    }
+    
+    /*icon animation*/
+    .menulist:hover .iconcircle {
+        margin: 18px 0px 0px 10px;
+        font-size: 24px;
+        color: #fff;
+        transform: rotate(360deg);
+        animation: iconcircle ease 0.5s 1;
+    }
+    @keyframes iconcircle {
+      0% {
+        transform: rotade(-90deg);
+      }
+      20% {
+        transform: rotade(-75deg) scale(1.03);
+      }
+      40% {
+        transform: rotade(-60deg) scale(1.08);
+      }
+      60% {
+        transform: rotate(-45deg) scale(1.15);
+      }
+      80% {
+        transform: rotade(-30deg) scale(1.08);
+      }
+      100% {
+        transform: rotate(5deg) scale(1);
+      }
+    }
+
+    .menulist .iconcircle {
+      font-size: 24px;
+      color: #fff;
+      transform: rotate(360deg);
+    }
+  
+    .menulist:hover .price {
+      animation: list-content ease 0.3s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      min-width: 50px;
+      
+    }
+    @keyframes list-content {
+      0% {
+        transform: translate(50px, 0);
+      }
+      40% {
+        transform: translate(25px, 0);
+      }
+      70% {
+        transform: translate(12px, 0);
+      }
+      100% {
+        transform: translate(1px, 0);
+      }
     }
     .menulist{
+      display: flex;
+      justify-content: space-between;
         border: 1px solid transparent;
         background-color: white;
         box-shadow:6px 6px 10px  #c8c8c8;
         border-radius: 15px 15px 15px 15px;
         height: 70px;
-        margin: 20px 0 20px 0;
-        padding: 10px 0 0 10px;
+        overflow: hidden;
+        padding:0;
+        margin: 20px 0 0 0;
+    }
+    .menulist:hover h3{
+      width: 60%;
+      overflow: hidden;
+      text-overflow: ellipsis ;
+    }
+    .menulist:hover .content_text{
+      text-overflow: ellipsis;
+    }
+    .content_text{
+      width: 80%;
+      padding: 10px;
+      padding-right: 10px;
+
     }
     
     .bigtitle{
@@ -228,13 +573,16 @@ footer div ul> li{
         padding-bottom: 5px;
         margin:0;
         width: 50px;
+        font-size: 20px;
     }
     .menulist h3{
+        font-size: 20px;
         font-weight: bold;
         
     }
     .menulist p{
         padding-top: 05px;
+        font-size: 17px;
     }
      /*Botton commander*/
      .bottonrestau {
@@ -263,7 +611,9 @@ footer div ul> li{
 
     /*Footer*/
     footer{
-        padding-top: 20px;
+      display:flex;
+			flex-direction: column;
+      padding-top: 20px;
         background-color:#353535;
         padding-left: 40px;
     }
@@ -276,12 +626,15 @@ footer div ul> li{
         color: white;
     }
     footer div ul{
+      display:flex;
+			flex-direction: column;
         padding: 0;
         color: white;
         list-style: none;
     }
     footer div ul> li{
         padding-bottom:10px ;
+        margin: 0;
     }
     .iconrestau{
         display: flex;
