@@ -207,6 +207,7 @@ header img {
 	box-shadow: 6px 6px 10px #c8c8c8;
 	border-radius: 15px 15px 15px 15px;
 	flex: 1 0 33%;
+	cursor: pointer;
 	padding: 0;
 	margin: 20px 0 0 0;
 }

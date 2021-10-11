@@ -208,6 +208,7 @@ header img {
 	border-radius: 15px 15px 15px 15px;
 	flex: 1 0 33%;
 	padding: 0;
+	cursor: pointer;
 	margin: 20px 0 0 0;
 }
 
