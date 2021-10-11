@@ -154,20 +154,8 @@ header img {
 }
 
 @keyframes iconcircle {
-	0% {
-		transform: rotade(-90deg);
-	}
-	20% {
-		transform: rotade(-75deg) scale(1.03);
-	}
-	40% {
-		transform: rotade(-60deg) scale(1.08);
-	}
 	60% {
 		transform: rotate(-45deg) scale(1.15);
-	}
-	80% {
-		transform: rotade(-30deg) scale(1.08);
 	}
 	100% {
 		transform: rotate(5deg) scale(1);
@@ -533,20 +521,9 @@ footer div ul>li {
 		animation: iconcircle ease 0.5s 1;
 	}
 	@keyframes iconcircle {
-		0% {
-			transform: rotade(-90deg);
-		}
-		20% {
-			transform: rotade(-75deg) scale(1.03);
-		}
-		40% {
-			transform: rotade(-60deg) scale(1.08);
-		}
+		
 		60% {
 			transform: rotate(-45deg) scale(1.15);
-		}
-		80% {
-			transform: rotade(-30deg) scale(1.08);
 		}
 		100% {
 			transform: rotate(5deg) scale(1);
