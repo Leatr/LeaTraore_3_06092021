@@ -1,9 +1,9 @@
 @font-face {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto';
 	src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 @font-face{
-font-family: 'Shrikhand', cursive;
+font-family: 'Shrikhand';
 src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap')
 }
 * {
@@ -869,7 +869,7 @@ background: linear-gradient(5deg,
 		.contenairnew{
 	
 	position: absolute;
-	right: 10px;
+	
 	border: 1px solid transparent;
 	background-color:#99e2d0;
 	color:#008766;
