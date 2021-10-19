@@ -91,13 +91,15 @@ header img {
 }
 
 .content_text {
-	min-width: 70%;
+	min-width: 65%;
 	padding: 10px;
 	overflow: hidden;
 	white-space: nowrap;
 	flex: 1;
 }
-
+.content_text:hover {
+	min-width: 0%;
+}
 .checbox {
 	display: none;
 	width: 30%;
@@ -118,7 +120,6 @@ header img {
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
 	transform: translateX(30px);
-	transform-origin: 50% 50%;
 }
 
 @keyframes checkbox {
@@ -146,7 +147,7 @@ header img {
 /*icon animation*/
 
 .menulist:hover .iconcircle {
-	margin: 0px 0px 0px 05px;
+	margin: 0px 0px 0px 0px;
 	font-size: 24px;
 	color: #fff;
 	transform: rotate(360deg);
@@ -194,10 +195,11 @@ header img {
 	justify-content: space-between;
 	background-color: white;
 	overflow: hidden;
+	cursor: pointer;
 	box-shadow: 6px 6px 10px #c8c8c8;
 	border-radius: 15px 15px 15px 15px;
 	flex: 1 0 33%;
-	padding: 0;
+	padding: 0 0 0 0;
 	margin: 20px 0 0 0;
 }
 
@@ -485,7 +487,7 @@ footer div ul>li {
 		animation-fill-mode: forwards;
 		animation-iteration-count: 1;
 		transform: translateX(30px);
-		transform-origin: 50% 50%;
+		
 	}
 	@keyframes checkbox {
 		0% {
@@ -648,8 +650,9 @@ footer div ul>li {
 		text-overflow: ellipsis;
 		flex: 1;
 	}
+	
 	.content_text:hover {
-		min-width: 80%;
+		min-width: 0%;
 	}
 	.checbox {
 		overflow: hidden;
@@ -672,7 +675,6 @@ footer div ul>li {
 		animation-fill-mode: forwards;
 		animation-iteration-count: 1;
 		transform: translateX(30px);
-		transform-origin: 50% 50%;
 	}
 	@keyframes checkbox {
 		0% {

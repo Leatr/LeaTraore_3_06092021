@@ -91,7 +91,7 @@ header img {
 }
 
 .content_text {
-	min-width: 70%;
+	min-width: 65%;
 	padding: 10px;
 	overflow: hidden;
 	white-space: nowrap;
@@ -118,7 +118,6 @@ header img {
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
 	transform: translateX(30px);
-	transform-origin: 50% 50%;
 }
 
 @keyframes checkbox {
@@ -654,7 +653,7 @@ footer div ul>li {
 		flex: 1;
 	}
 	.content_text:hover {
-		min-width: 80%;
+		min-width: 0%;
 	}
 	.checbox {
 		overflow: hidden;
@@ -677,7 +676,7 @@ footer div ul>li {
 		animation-fill-mode: forwards;
 		animation-iteration-count: 1;
 		transform: translateX(30px);
-		transform-origin: 50% 50%;
+		
 	}
 	@keyframes checkbox {
 		0% {

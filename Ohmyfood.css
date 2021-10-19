@@ -21,8 +21,8 @@ src: url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap')
     display: flex;
     justify-content: center;
     align-items: center;
-     animation: charge 1s linear both; 
-     animation-delay: 1s;
+    animation: charge 1s linear both; 
+    animation-delay: 1s;
 		}
 @keyframes charge {
 	0%{
@@ -285,7 +285,8 @@ font-size: 22px;
 	   }
 
 .contenairnew{
-	
+	margin-left:10px;		
+	margin-top: 10px;
 	position: absolute;
 	border: 1px solid transparent;
 	background-color:#99e2d0;
@@ -295,18 +296,19 @@ font-size: 22px;
 	padding:5px 1px 5px 7px;
 	font-weight: bold;
 }
-		.contenairnew1{
+.contenairnew1{
 					
-			
-			position: absolute;
-			border: 1px solid transparent;
-            background-color:#99e2d0;
-			color:#008766;
-			border-radius: 1px 1px 1px 1px;
-			width: 90px;
-			padding:5px 1px 5px 7px;
-			font-weight: bold;
-		}
+margin-left:10px;		
+margin-top: 10px;
+position: absolute;
+border: 1px solid transparent;
+background-color:#99e2d0;
+color:#008766;
+border-radius: 1px 1px 1px 1px;
+width: 90px;
+padding:5px 1px 5px 7px;
+font-weight: bold;			
+}
 		.itemclick div{
 			padding-left: 10px;
 			
@@ -327,7 +329,6 @@ font-size: 22px;
 			z-index:9;
 		 }
 		  .list-heart--empty:hover {
-			animation: non 1s forwards linear;
 			cursor: pointer;
 		  }
 		  .list-heart--empty:hover + i {
@@ -635,6 +636,8 @@ font-size: 22px;
 		}
 		
 		.contenairnew{
+			margin-left:0;		
+			margin-top: 0;
 			top: 70em;
 			right: 2em;		
 			float: right;
@@ -648,6 +651,8 @@ font-size: 22px;
 			font-weight: bold;
 		}
 		.contenairnew1{
+			margin-left:0;		
+			margin-top: 0;
 			top: 90em;
 			right: 2em;		
 			float: right;
@@ -869,7 +874,8 @@ background: linear-gradient(5deg,
 		.contenairnew{
 	
 	position: absolute;
-	
+	margin-top: 10px;
+	margin-left:10px;	
 	border: 1px solid transparent;
 	background-color:#99e2d0;
 	color:#008766;
@@ -879,8 +885,8 @@ background: linear-gradient(5deg,
 	font-weight: bold;
 }
 		.contenairnew1{
-					
-			
+			margin-left:10px;		
+			margin-top: 10px;
 			position: absolute;
 			border: 1px solid transparent;
             background-color:#99e2d0;
