@@ -259,6 +259,8 @@ header img {
 }
 
 .menulist h3 {
+	text-overflow: ellipsis;
+    overflow: hidden;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -266,8 +268,9 @@ header img {
 .menulist p {
 	padding-top: 05px;
 	font-size: 17px;
+	text-overflow: ellipsis;
+    overflow: hidden;
 }
-
 
 /*Botton commander*/
 
